@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
-
 @import url('https://fonts.googleapis.com/css2?family=Crete+Round&display=swap');
 
 :root {
@@ -76,7 +75,7 @@ header nav {
 h1 {
   width: 327px;
   height: 124px;
-  font-family: "Crete Round";
+  font-family: "Crete Round", Cambria;
   font-weight: 400;
   font-size: 56px;
   line-height: 64px;
@@ -85,7 +84,7 @@ h1 {
 }
 
 .headline p {
-  font-family: "Poppins";
+  font-family: "Poppins", Times;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
