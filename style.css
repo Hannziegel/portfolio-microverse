@@ -67,13 +67,16 @@ header nav {
   top: 92px;
 
   background: var(--color-background-2);
+  background-image: url(./assets/imgs/Illustration.svg);
+  background-repeat: no-repeat;
+  background-position: bottom right;
 }
 
- h1 {
+h1 {
   width: 327px;
   height: 124px;
 
-  font-family: 'Crete Round';
+  font-family: "Crete Round";
   font-weight: 400;
   font-size: 56px;
   line-height: 64px;
