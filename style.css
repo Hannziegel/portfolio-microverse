@@ -1,8 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+
 :root {
   --color-background: #3c3a39;
   --color-background-2: #1c1a19;
-  --color-text-1: #ffffff;
+  --color-text-1: #fff;
   --color-text-2: #ff6b00;
   --color-text-3: #fff5e1;
   --font-family-1: "Roboto";
@@ -59,13 +60,11 @@ header nav {
   flex-direction: column;
   padding: 120px 24px;
   gap: 12px;
-
   position: absolute;
   width: 375px;
   height: 590px;
   left: 0;
   top: 92px;
-
   background: var(--color-background-2);
   background-image: url(./assets/imgs/Illustration.svg);
   background-repeat: no-repeat;
@@ -75,13 +74,11 @@ header nav {
 h1 {
   width: 327px;
   height: 124px;
-
   font-family: "Crete Round";
   font-weight: 400;
   font-size: 56px;
   line-height: 64px;
   letter-spacing: 0.37px;
-
   color: var(--color-text-2);
 }
 
@@ -90,18 +87,15 @@ h1 {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-
   color: var(--color-text-1);
 }
 
 #headline-subheading {
   width: 327px;
   height: 27px;
-
   font-family: var(--font-family-1);
   font-weight: 700;
   font-size: 24px;
   line-height: 32px;
-
   color: var(--color-text-3);
 }
