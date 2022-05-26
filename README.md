@@ -2,7 +2,7 @@
 
 # Portfolio - Mobile version
 
-> A mobile version of a portfolio using a template
+> A mobile version of a portfolio using a template. Project created to better understand HTML, CSS, Linters, Git Flow, Flexbox and Grid concepts
 
 ## Built With
 
@@ -14,7 +14,7 @@ Use the code button to download the zip file of the project, unzip it and open t
 
 ## Authors
 
-👤 **Author1**
+👤 **Rodrigo Johann Reckziegel Nunes**
 
 - GitHub: [@hannziegel](https://github.com/Hannziegel)
 
