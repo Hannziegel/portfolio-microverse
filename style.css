@@ -152,12 +152,6 @@ header nav {
   justify-content: center;
 }
 
-.portfolio button:hover {
-  border: 1px solid #f55800;
-  background-color: #fff5e1;
-  color: #f55800;
-}
-
 .other-projects {
   margin: 24px 0;
   width: 327px;
@@ -195,17 +189,6 @@ header nav {
   list-style: none;
 }
 
-.other-projects button {
-  padding: 10px 12px;
-  width: 100%;
-  background-color: var(--color-text-2);
-  font-family: "Inter", sans-serif;
-  font-weight: 700;
-  font-size: 17px;
-  color: var(--color-text-1);
-  margin-top: 22px;
-}
-
 /* About Section */
 
 .about {
@@ -235,30 +218,6 @@ header nav {
   font-weight: var(--font-weight-400);
   font-size: var(--font-size-16);
   height: 150px;
-}
-
-.about button {
-  color: var(--color-text-1);
-  background-color: #ff6b00;
-  padding: 12px;
-  font-family: "Inter", sans-serif;
-  font-weight: var(--font-weight-700);
-  font-size: var(--font-size-17);
-}
-
-.about button:hover {
-  border: 1px solid #f55800;
-  background-color: #fff5e1;
-  color: #f55800;
-}
-
-.about button:active {
-  background-color: #e05304;
-}
-
-.about button:disabled {
-  background-color: #f4f1f0;
-  color: #5b5957;
 }
 
 .about hr {
@@ -357,6 +316,28 @@ header nav {
   margin-bottom: 24px;
 }
 
+/* Buttons */
+
+.other-projects button {
+  padding: 10px 12px;
+  width: 100%;
+  background-color: var(--color-text-2);
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  color: var(--color-text-1);
+  margin-top: 22px;
+}
+
+.about button {
+  color: var(--color-text-1);
+  background-color: #ff6b00;
+  padding: 12px;
+  font-family: "Inter", sans-serif;
+  font-weight: var(--font-weight-700);
+  font-size: var(--font-size-17);
+}
+
 .contact button {
   padding: 10px 12px;
   width: 130px;
@@ -366,6 +347,27 @@ header nav {
   font-size: 17px;
   color: var(--color-text-1);
   margin-bottom: 24px;
+}
+
+.portfolio button:hover {
+  border: 1px solid #f55800;
+  background-color: #fff5e1;
+  color: #f55800;
+}
+
+.about button:hover {
+  border: 1px solid #f55800;
+  background-color: #fff5e1;
+  color: #f55800;
+}
+
+.about button:active {
+  background-color: #e05304;
+}
+
+.about button:disabled {
+  background-color: #f4f1f0;
+  color: #5b5957;
 }
 
 .contact button:hover {
@@ -383,6 +385,7 @@ header nav {
   color: #5b5957;
 }
 
+/* Main project */
 #main-project {
   margin: 80px 0 24px;
 }
