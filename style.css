@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@400;500;700&family=Poppins:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap');
 
 :root {
-
   /* colors */
   --color-background: #3c3a39;
   --color-background-2: #1c1a19;
@@ -153,57 +152,7 @@ header nav {
   justify-content: center;
 }
 
-#main-project {
-  margin: 80px 0 24px;
-}
-
-#main-project h3 {
-  font-family: "Create Round", sans-serif;
-  font-weight: 400;
-  font-size: 32px;
-  color: #091e42;
-  width: 327px;
-  margin: 12px 0;
-}
-
-#main-project p {
-  font-family: "Inter", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  color: #091e42;
-  width: 327px;
-  margin: 12px 0;
-}
-
-#main-project ul {
-  display: flex;
-  gap: 12px;
-  margin: 12px 0;
-}
-
-#main-project li {
-  list-style: none;
-  border: 1px solid #8993a4;
-  padding: 10px 12px;
-}
-
-#main-project button {
-  padding: 10px 12px;
-  width: 124px;
-  background-color: var(--color-text-2);
-  font-family: "Inter", sans-serif;
-  font-weight: 700;
-  font-size: 17px;
-  color: var(--color-text-1);
-}
-
 .portfolio button:hover {
-  border: 1px solid #f55800;
-  background-color: #fff5e1;
-  color: #f55800;
-}
-
-#main-project button:hover {
   border: 1px solid #f55800;
   background-color: #fff5e1;
   color: #f55800;
@@ -432,6 +381,56 @@ header nav {
 .contact button:disabled {
   background-color: #f4f1f0;
   color: #5b5957;
+}
+
+#main-project {
+  margin: 80px 0 24px;
+}
+
+#main-project h3 {
+  font-family: "Create Round", sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  color: #091e42;
+  width: 327px;
+  margin: 12px 0;
+}
+
+#main-project p {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #091e42;
+  width: 327px;
+  margin: 12px 0;
+}
+
+#main-project ul {
+  display: flex;
+  gap: 12px;
+  margin: 12px 0;
+}
+
+#main-project li {
+  list-style: none;
+  border: 1px solid #8993a4;
+  padding: 10px 12px;
+}
+
+#main-project button {
+  padding: 10px 12px;
+  width: 124px;
+  background-color: var(--color-text-2);
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  color: var(--color-text-1);
+}
+
+#main-project button:hover {
+  border: 1px solid #f55800;
+  background-color: #fff5e1;
+  color: #f55800;
 }
 
 /* Footer Section */
