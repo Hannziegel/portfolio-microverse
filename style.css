@@ -91,6 +91,7 @@
   --height-114: 114px;
   --height-124: 124px;
   --height-150: 150px;
+  --height-435: 435px;
 
   /* width */
   --width-100perc: 100%;
@@ -99,6 +100,7 @@
   --width-124: 124px;
   --width-130: 130px;
   --width-327: 327px;
+  --width-369: 369px;
 
   /* gap */
   --gap-10: 10px;
@@ -116,7 +118,7 @@
   text-decoration: none;
 }
 
-html, gibody {
+html, body {
   font-family: "Roboto", sans-serif;
   overflow-x: hidden;
 }
@@ -614,12 +616,13 @@ footer {
     flex-direction: column;
     position: absolute;
     left: 0;
-    top: 250px;
+    top: 350px;
     padding: 35px;
     padding-right: 80px;
   }
 
   .headline-intro {
+    margin: 100px 0;
     gap: 24px;
   }
 
@@ -708,12 +711,43 @@ footer {
     order: 1;
   }
 
+  .other-projects {
+    margin: 24px 0;
+    width: var(--width-369);
+    height: var(--height-435);
+    background-size: var(--width-369) var(--height-435);
+    justify-content: space-between;
+  }
+  
+  .other-projects h3 {
+    margin: var(--margin-t-rl-b-84) var(--margin-t-rl-b-16) var(--margin-0);
+  }
+  
+  .other-projects p {
+    font-size: var(--font-size-17);
+    width: var(--width-435);
+    margin: var(--margin-t-rl-b-12) var(--margin-t-rl-b-16) var(--margin-0);
+  }
+  
+  .other-projects ul {
+    gap: var(--gap-24);
+    margin: var(--margin-t-b-12) var(--margin-l-r-16);
+  }
+  
+  .other-projects li {
+
+  }
+
+  .other-projects button {
+    width: var(--width-100perc);
+    margin-top: var(--margin-top-22);
+  }
+
   /* About Section */
 
   .about {
     background-image: url(./assets/imgs/background-about-desktop.svg);
-    background-position: 99.99% 6%;
-    padding: 130px 122px;
+    background-position: 99.99% 15%;
   }
 
   .about p {
@@ -732,11 +766,10 @@ footer {
 
   /* Contact Section */
 
-  .contact {
+  .contact-container {
+    display: flex;
     flex-direction: row;
     align-items: baseline;
-    justify-content: center;
-    padding: 130px 135px;
     gap: 40px;
   }
 
@@ -745,11 +778,6 @@ footer {
     font-weight: 700;
     font-size: 40px;
     color: #262626;
-  }
-
-  form {
-    flex-direction: row;
-    align-items: baseline;
   }
 
   .contact form input {
@@ -769,4 +797,5 @@ footer {
     display: flex;
     flex-direction: row;
   }
+
 }
