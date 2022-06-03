@@ -61,7 +61,7 @@
   --margin-t-rl-b-24: 24px;
   --margin-t-rl-b-80: 80px;
   --margin-t-rl-b-84: 84px;
-  --margin-t-b-0: 0px;
+  --margin-t-b-0: 0;
   --margin-t-b-12: 12px;
   --margin-t-b-120: 120px;
   --margin-t-b-150: 150px;
@@ -424,6 +424,7 @@ header nav {
 textarea::placeholder {
   padding: var(--padding-24);
 }
+
 /* Buttons */
 
 .other-projects button {
@@ -457,27 +458,6 @@ textarea::placeholder {
   margin-bottom: var(--margin-bottom-24);
 }
 
-.portfolio button:hover {
-  border: 1px solid var(--botton-color-1);
-  background-color: var(--botton-color-2);
-  color: var(--color-text-7);
-}
-
-.about button:hover {
-  border: 1px solid var(--botton-color-1);
-  background-color: var(--botton-color-2);
-  color: var(--color-text-7);
-}
-
-.about button:active {
-  background-color: var(--botton-color-3);
-}
-
-.about button:disabled {
-  background-color: var(--button-color-4);
-  color: var(--color-text-8);
-}
-
 .contact button {
   align-self: center;
 }
@@ -498,6 +478,26 @@ textarea::placeholder {
   color: var(--color-text-8);
 }
 
+.portfolio button:hover {
+  border: 1px solid var(--botton-color-1);
+  background-color: var(--botton-color-2);
+  color: var(--color-text-7);
+}
+
+.about button:hover {
+  border: 1px solid var(--botton-color-1);
+  background-color: var(--botton-color-2);
+  color: var(--color-text-7);
+}
+
+.about button:active {
+  background-color: var(--botton-color-3);
+}
+
+.about button:disabled {
+  background-color: var(--button-color-4);
+  color: var(--color-text-8);
+}
 /* Main project */
 
 .project-img img {
@@ -688,6 +688,7 @@ footer {
     width: 684px;
     height: 448px;
   }
+
   .project-img {
     order: 0;
   }
