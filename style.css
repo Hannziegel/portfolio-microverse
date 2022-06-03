@@ -699,34 +699,6 @@ footer {
     width: var(--width-100perc);
     padding: 17px 0;
   }
-  
-  #main-project {
-    display: flex;
-    flex-direction: row;
-    justify-content: baseline;
-    gap: 24px;
-  }
-
-  #main-project h3 {
-    margin: 0;
-    font-size: 40px;
-    color: #091e42;
-  }
-
-  #main-project p {
-    width: 400px;
-  }
-
-  #main-project button {
-    margin-top: var(--margin-top-24);
-  }
-
-  #main-project img {
-    width: 684px;
-    height: 448px;
-  }
-
-  
 
   /* About Section */
 
@@ -777,9 +749,38 @@ footer {
     align-self: flex-start;
   }
 
-  /* Contact Section */
+  /* Footer Section */
+
   .footer {
     display: flex;
     flex-direction: row;
+  }
+
+  /* #main-project */
+
+  #main-project {
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+    gap: 24px;
+  }
+
+  #main-project h3 {
+    margin: 0;
+    font-size: 40px;
+    color: #091e42;
+  }
+
+  #main-project p {
+    width: 400px;
+  }
+
+  #main-project button {
+    margin-top: var(--margin-top-24);
+  }
+
+  #main-project img {
+    width: 684px;
+    height: 448px;
   }
 }
