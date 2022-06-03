@@ -52,6 +52,7 @@
   --leter-spacing-037: 0.37px;
 
   /* margin */
+  --magin-auto: auto;
   --margin-6vw: 6vw;
   --margin-10vw: 10vw;
   --margin-0: 0;
@@ -176,8 +177,8 @@ header nav {
 /* Headline Section */
 
 .container {
-  width: 375px;
-  margin: var(--margin-t-b-120) var(--margin-6vw);
+  width: var(--width-327);
+  margin: var(--margin-t-b-120) var(--magin-auto);
 }
 
 .headline {
