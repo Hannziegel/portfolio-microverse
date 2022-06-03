@@ -117,7 +117,6 @@
   box-sizing: border-box;
   margin: 0;
   text-decoration: none;
-  transition-duration: 1s;
 }
 
 html,
@@ -231,7 +230,6 @@ header nav {
 .main-project-container {
   display: flex;
   justify-content: center;
-  margin: var(--margin-80) var(--margin-0);
 }
 
 .article-container {
