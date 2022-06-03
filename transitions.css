@@ -37,6 +37,6 @@ li:hover {
 }
 
 .menu-links a img:hover {
-    transform: rotate(360deg);
-    transition-duration: 1s;
-  }
+  transform: rotate(360deg);
+  transition-duration: 1s;
+}
