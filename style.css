@@ -456,9 +456,6 @@ textarea::placeholder {
   font-size: var(--font-size-17);
   color: var(--color-text-1);
   margin-bottom: var(--margin-bottom-24);
-}
-
-.contact button {
   align-self: center;
 }
 
@@ -498,6 +495,7 @@ textarea::placeholder {
   background-color: var(--button-color-4);
   color: var(--color-text-8);
 }
+
 /* Main project */
 
 .project-img img {
@@ -663,32 +661,6 @@ footer {
     margin: 0 0;
   }
 
-  #main-project {
-    display: flex;
-    flex-direction: row;
-    justify-content: baseline;
-    gap: 24px;
-  }
-
-  #main-project h3 {
-    margin: 0;
-    font-size: 40px;
-    color: #091e42;
-  }
-
-  #main-project p {
-    width: 400px;
-  }
-
-  #main-project button {
-    margin-top: var(--margin-top-24);
-  }
-
-  #main-project img {
-    width: 684px;
-    height: 448px;
-  }
-
   .project-img {
     order: 0;
   }
@@ -727,6 +699,34 @@ footer {
     width: var(--width-100perc);
     padding: 17px 0;
   }
+  
+  #main-project {
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+    gap: 24px;
+  }
+
+  #main-project h3 {
+    margin: 0;
+    font-size: 40px;
+    color: #091e42;
+  }
+
+  #main-project p {
+    width: 400px;
+  }
+
+  #main-project button {
+    margin-top: var(--margin-top-24);
+  }
+
+  #main-project img {
+    width: 684px;
+    height: 448px;
+  }
+
+  
 
   /* About Section */
 
