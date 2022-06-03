@@ -6,9 +6,9 @@
   --color-background-2: #1c1a19;
   --color-background-3: rgba(255, 255, 255, 0.24);
   --color-background-4: #fbf8f7;
-  --line-color-1:#212121;
-  --line-color-2:#8993a4;
-  --line-color-3:#dfe1e6;
+  --line-color-1: #212121;
+  --line-color-2: #8993a4;
+  --line-color-3: #dfe1e6;
   --color-text-1: #fff;
   --color-text-2: #ff6b00;
   --color-text-3: #fff5e1;
@@ -84,7 +84,7 @@
   --padding-24: 24px;
   --padding-120: 120px;
   --padding-225: 225px;
-  
+
   /* height */
   --height-40: 40px;
   --height-92: 92px;
@@ -116,9 +116,11 @@
   box-sizing: border-box;
   margin: 0;
   text-decoration: none;
+  transition-duration: 1s;
 }
 
-html, body {
+html,
+body {
   font-family: "Roboto", sans-serif;
   overflow-x: hidden;
 }
@@ -243,7 +245,7 @@ header nav {
   flex-direction: column;
 }
 
-.portfolio-title{
+.portfolio-title {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -390,13 +392,6 @@ header nav {
 }
 
 /* Contact Section */
-
-.contact {
-  padding: var(--padding-120) var(--padding-24);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
 
 .contact p {
   font-family: "Inter", sans-serif;
@@ -577,9 +572,6 @@ footer {
     padding: 0 150px;
   }
 
-  .logo {
-    flex-grow: 1;
-  }
   .right {
     padding: 10px 12px;
     flex-grow: 1;
@@ -631,7 +623,7 @@ footer {
   }
 
   /* Porfolio Section */
-  
+
   .portfolio {
     padding: 150px;
   }
@@ -659,7 +651,6 @@ footer {
   .test {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 150px;
   }
 
   .article-container {
@@ -669,7 +660,7 @@ footer {
 
   .main-project-container {
     justify-content: space-between;
-
+    margin: 0 0;
   }
 
   #main-project {
@@ -689,14 +680,10 @@ footer {
     width: 400px;
   }
 
-  #main-project ul {
-    justify-content: space-evenly;
-  }
-  
   #main-project button {
     margin-top: var(--margin-top-24);
   }
-  
+
   #main-project img {
     width: 684px;
     height: 448px;
@@ -718,29 +705,26 @@ footer {
     background-size: var(--width-369) var(--height-435);
     justify-content: space-between;
   }
-  
+
   .other-projects h3 {
     margin: var(--margin-t-rl-b-84) var(--margin-t-rl-b-16) var(--margin-0);
+    width: 220px;
   }
-  
+
   .other-projects p {
     font-size: var(--font-size-17);
     width: var(--width-435);
     margin: var(--margin-t-rl-b-12) var(--margin-t-rl-b-16) var(--margin-0);
   }
-  
+
   .other-projects ul {
     gap: var(--gap-24);
     margin: var(--margin-t-b-12) var(--margin-l-r-16);
   }
-  
-  .other-projects li {
-
-  }
 
   .other-projects button {
     width: var(--width-100perc);
-    margin-top: var(--margin-top-22);
+    padding: 17px 0;
   }
 
   /* About Section */
@@ -797,5 +781,4 @@ footer {
     display: flex;
     flex-direction: row;
   }
-
 }
