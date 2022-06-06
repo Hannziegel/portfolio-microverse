@@ -9,6 +9,9 @@
 - HTML
 - CSS
 
+## Live Demo 
+
+[Live Demo Link](https://hannziegel.github.io/portfolio/)
 ## Getting Started
 Use the code button to download the zip file of the project, unzip it and open the index.html file in the browser
 
