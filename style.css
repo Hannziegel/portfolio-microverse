@@ -125,6 +125,10 @@ body {
   overflow-x: hidden;
 }
 
+.hide {
+  display: none;
+  visibility: hidden;
+}
 /* Header Section */
 
 header {
@@ -559,6 +563,49 @@ footer {
   align-items: center;
   justify-content: center;
 }
+
+/* Test */
+
+.header-menu {
+  height: 100vh;
+  align-items: flex-start;
+}
+
+.logo-menu {
+  display: none;
+}
+
+.burguer-icon-menu {
+  display: none;
+}
+
+.close-icon-menu {
+  margin-left: auto;
+  order: 1;
+}
+
+.right-menu {
+  width: 100%;
+  flex-direction: column;
+}
+
+.menu-links-menu {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  text-align: left;
+  clear: right;
+  order: 2;
+}
+
+.menu-link-menu {
+  font-weight: 700;
+  font-size: 32px;
+  border-bottom: 1px solid #6F6C6B;
+  width: 100%;
+  padding-right: auto;
+}
+
 
 /* ------===== MEDIA QUERIES =====------ */
 
