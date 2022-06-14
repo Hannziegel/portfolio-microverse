@@ -136,7 +136,7 @@ header {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  height: var(--height-92);
+  height:10vh; /* var(--height-92);*/
   background-color: var(--color-background);
   color: var(--color-text-1);
   padding: var(--padding-10) var(--padding-12);
@@ -569,6 +569,12 @@ footer {
 .header-menu {
   height: 100vh;
   align-items: flex-start;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: var(--color-background);
+  color: var(--color-text-1);
+  padding: var(--padding-10) var(--padding-12);
 }
 
 .logo-menu {
@@ -579,7 +585,7 @@ footer {
   display: none;
 }
 
-.close-icon-menu {
+#mobMenu {
   margin-left: auto;
   order: 1;
 }
