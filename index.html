@@ -10,10 +10,12 @@
     />
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./transitions.css" />
+    <script src="script.js" defer></script>
     <title>Rodrigo J. R. Nunes</title>
   </head>
+
   <body>
-    <header>
+    <header class="header collapse">
       <div class="logo">
         <a href="./index.html">Rodrigo Nunes</a>
       </div>
@@ -23,11 +25,14 @@
           <a href="#portfolio" class="menu-link link-effect"> Portfolio </a>
           <a href="#about" class="menu-link link-effect"> About </a>
           <a href="#contact" class="menu-link link-effect"> Contact </a>
-          <a href="#contact" class="menu-link link-effect svg"
+          <a href="#contact" class="menu-link link-effect svg hide"
             ><img src="/assets/icons/contact-icon.svg" alt=""
           /></a>
         </div>
-        <i class="material-icons burguer-icon"> menu </i>
+        <a id="mobMenu">
+          <i class="material-icons burguer-icon"> menu </i>
+          <i class="material-icons close-icon hide"> close </i>
+        </a>
       </nav>
     </header>
 
@@ -242,7 +247,7 @@
         </div>
       </section>
 
-      <section class="contact">
+      <section class="contact" id="contact">
         <div class="container">
           <div class="contact-container">
             <p>

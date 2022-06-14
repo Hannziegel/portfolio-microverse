@@ -125,17 +125,24 @@ body {
   overflow-x: hidden;
 }
 
+.hide {
+  display: none;
+  visibility: hidden;
+}
+
 /* Header Section */
 
 header {
+  position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  height: var(--height-92);
+  height: 6vh;
   background-color: var(--color-background);
   color: var(--color-text-1);
   padding: var(--padding-10) var(--padding-12);
+  z-index: 10;
 }
 
 .right {
@@ -171,6 +178,14 @@ header nav {
   height: var(--height-40);
   border-radius: 8px;
   top: calc(50% - 40px / 2);
+}
+
+.burguer-icon {
+  color: var(--color-text-1);
+}
+
+.close-icon {
+  color: #67798e;
 }
 
 /* Headline Section */
@@ -226,6 +241,10 @@ header nav {
 }
 
 /* Portfolio Section */
+
+.portfolio {
+  padding: 120px 0;
+}
 
 .main-project-container {
   display: flex;
@@ -308,6 +327,7 @@ header nav {
   background-repeat: no-repeat;
   background-position: 99.99% 23%;
   display: flex;
+  padding: 120px 0;
 }
 
 .about * {
@@ -391,6 +411,9 @@ header nav {
 }
 
 /* Contact Section */
+.contact {
+  padding: 120px 120px;
+}
 
 .contact p {
   font-family: "Inter", sans-serif;
@@ -558,6 +581,54 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/* Menu Mobile */
+
+.header-menu {
+  height: 100vh;
+  align-items: flex-start;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: var(--color-background);
+  color: var(--color-text-1);
+  padding: var(--padding-10) var(--padding-12);
+}
+
+.logo-menu {
+  display: none;
+}
+
+.burguer-icon-menu {
+  display: none;
+}
+
+#mobMenu {
+  margin-left: auto;
+  order: 1;
+  cursor: pointer;
+}
+
+.right-menu {
+  width: 100%;
+  flex-direction: column;
+}
+
+.menu-links-menu {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  text-align: left;
+  clear: right;
+  order: 2;
+}
+
+.menu-link-menu {
+  font-weight: 700;
+  font-size: 32px;
+  border-bottom: 1px solid #6f6c6b;
+  width: 100%;
 }
 
 /* ------===== MEDIA QUERIES =====------ */
@@ -760,7 +831,6 @@ footer {
   #main-project {
     display: flex;
     flex-direction: row;
-    justify-content: baseline;
     gap: 24px;
   }
 

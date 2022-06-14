@@ -12,7 +12,7 @@
 
 .menu-links a:hover {
   color: var(--color-text-2);
-  transform: scale(1.15);
+  transform: scale(1.05);
   transition-duration: 0.5s;
 }
 
