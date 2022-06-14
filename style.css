@@ -129,6 +129,7 @@ body {
   display: none;
   visibility: hidden;
 }
+
 /* Header Section */
 
 header {
@@ -136,7 +137,7 @@ header {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  height:10vh; /* var(--height-92);*/
+  height: 10vh; /* var(--height-92);*/
   background-color: var(--color-background);
   color: var(--color-text-1);
   padding: var(--padding-10) var(--padding-12);
@@ -175,6 +176,14 @@ header nav {
   height: var(--height-40);
   border-radius: 8px;
   top: calc(50% - 40px / 2);
+}
+
+.burguer-icon {
+  color: var(--color-text-1);
+}
+
+.close-icon {
+  color: #67798e;
 }
 
 /* Headline Section */
@@ -564,7 +573,7 @@ footer {
   justify-content: center;
 }
 
-/* Test */
+/* Menu Mobile */
 
 .header-menu {
   height: 100vh;
@@ -607,11 +616,10 @@ footer {
 .menu-link-menu {
   font-weight: 700;
   font-size: 32px;
-  border-bottom: 1px solid #6F6C6B;
+  border-bottom: 1px solid #6f6c6b;
   width: 100%;
   padding-right: auto;
 }
-
 
 /* ------===== MEDIA QUERIES =====------ */
 
