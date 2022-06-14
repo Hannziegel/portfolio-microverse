@@ -133,11 +133,12 @@ body {
 /* Header Section */
 
 header {
+  position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  height: 10vh; /* var(--height-92);*/
+  height: 6vh; /* var(--height-92);*/
   background-color: var(--color-background);
   color: var(--color-text-1);
   padding: var(--padding-10) var(--padding-12);
@@ -240,6 +241,9 @@ header nav {
 
 /* Portfolio Section */
 
+.portfolio {
+  padding: 120px 0;
+}
 .main-project-container {
   display: flex;
   justify-content: center;
@@ -321,6 +325,7 @@ header nav {
   background-repeat: no-repeat;
   background-position: 99.99% 23%;
   display: flex;
+  padding: 120px 0;
 }
 
 .about * {
@@ -404,6 +409,9 @@ header nav {
 }
 
 /* Contact Section */
+.contact {
+  padding: 120px 120px;
+}
 
 .contact p {
   font-family: "Inter", sans-serif;
@@ -597,6 +605,7 @@ footer {
 #mobMenu {
   margin-left: auto;
   order: 1;
+  cursor: pointer;
 }
 
 .right-menu {

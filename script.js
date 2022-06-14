@@ -1,4 +1,11 @@
 document.querySelector("#mobMenu").addEventListener("click", () => {
+  mobileMenu();
+});
+document.querySelector(".menu-links").addEventListener("click", () => {
+  mobileMenu();
+});
+
+function mobileMenu() {
   // Change the height of Header to cover all screen
   document.querySelector(".collapse").classList.toggle("header-menu");
   // Add hide class to burguer-icon, logo and remove for .close-icon
@@ -11,4 +18,4 @@ document.querySelector("#mobMenu").addEventListener("click", () => {
   document
     .querySelectorAll(".menu-link")
     .forEach((element) => element.classList.toggle("menu-link-menu"));
-});
+}
