@@ -14,7 +14,9 @@ function mobileMenu() {
     .querySelectorAll('.menu-link')
     .forEach((element) => element.classList.toggle('menu-link-menu'));
 }
-
+document.querySelector('body').addEventListener('click', (event)=>{
+  console.log(event.target);
+});
 document.querySelector('#mobMenu').addEventListener('click', () => {
   mobileMenu();
 });
@@ -82,9 +84,11 @@ let projectData = [
 
 //click button
 
-const addButton = document.querySelector('.seeButton');
+const addButton = document.querySelectorAll('.seeButton');
 
-addButton.addEventListener('click', createPopUp)
+addButton.forEach((btn)=> {
+  btn.addEventListener('click', createPopUp)
+});
 
 function createPopUp (event){
   //create popUp div, append it to the main section, add css style class
