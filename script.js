@@ -14,9 +14,7 @@ function mobileMenu() {
     .querySelectorAll('.menu-link')
     .forEach((element) => element.classList.toggle('menu-link-menu'));
 }
-document.querySelector('body').addEventListener('click', (event)=>{
-  console.log(event.target);
-});
+
 document.querySelector('#mobMenu').addEventListener('click', () => {
   mobileMenu();
 });
