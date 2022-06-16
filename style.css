@@ -577,16 +577,16 @@ footer {
 
 .projectPopUp {
   position: fixed;
-  height: 90%;
-  max-height: 800px;
-  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   top: 5vh;
-  left: 10vw;
+  margin: 0 4vw;
+  align-self: center;
+  justify-self: center;
   background-color: #fff;
   box-shadow: 0 0 20px 80vh #262626e5;
   z-index: 15;
-  display: flex;
-  flex-direction: column;
   padding: 30px 20px;
   gap: 24px;
 }
@@ -939,13 +939,10 @@ footer {
   }
 
   /* Project Pop Up */
-
+  
   .projectPopUp {
-    top: 10vh;
-    max-height: 700px;
-    width: 85vw;
-    max-width: 1000px;
-    left: 10vw;
+    top:  20%;
+    left: 10%;
   }
 
   .projectPopUp ul {
@@ -967,9 +964,15 @@ footer {
     gap: 24px;
   }
 
+  .projectPopUp p {
+    min-width: 250px;
+    max-width: 600px;
+  }
+
   .projectPopUp img {
-    max-width: 659px;
-    max-height: 448px;
+    min-width: 100px;
+    max-width: auto;
+    object-fit: contain;
   }
 
   /* #main-project */
