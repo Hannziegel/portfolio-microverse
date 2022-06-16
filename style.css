@@ -793,7 +793,7 @@ footer {
 
   .test {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
   }
 
   .article-container {
@@ -802,7 +802,7 @@ footer {
   }
 
   .main-project-container {
-    justify-content: space-between;
+    justify-content: center;
     margin: 0 0;
   }
 

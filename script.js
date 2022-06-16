@@ -29,7 +29,7 @@ document.querySelector('.menu-links').addEventListener('click', () => {
 let projectData = [
   { 'title':'Multi Post Stories',
     'description':'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent', 
-    'featured image':'./assets/imgs/snapshoot_portfolio_mobile.jpg',
+    'featured image':'./assets/imgs/projects/mainprojectimg.jpg',
     'technologies':['html','Bootstrap','Ruby on rails'],
     'link to live version':'https://hannziegel.github.io/portfolio/', 
     'link to source': 'https://github.com/Hannziegel/portfolio'
@@ -79,16 +79,130 @@ let projectData = [
 ]
 
 /*    ------=========     Portfolio Section    =========------    */
+
+  //create portfolio section, add portfolio class to use in css, add portfolio id to use in js
   let porfolioSection = document.createElement('SECTION');
   porfolioSection.classList.add('portfolio')
   porfolioSection.id = 'portfolio'
-  /* document.body.querySelector('main').appendChild(porfolioSection) */
-
+  
+  //place porftolio section before about section on html
   mainPosition = document.getElementById('main')
   aboutSectionPosition = document.getElementById('about')
   mainPosition.insertBefore(porfolioSection, aboutSectionPosition)
 
-  porfolioSection.innerHTML = `
+  // -- Porfolio Title -- //
+
+  //Create portfolio-title div and put h2 and div inside
+
+  let porfolioTitle     = document.createElement('div')
+      portfolioTitleh2  = document.createElement('h2')
+      porfolioTitleLine = document.createElement('div')
+
+  //Add css classes to use in css and add content    
+
+  porfolioTitle.classList.add('portfolio-title')
+  porfolioTitleLine.classList.add('portfolio-line')
+  portfolioTitleh2.textContent = 'My Recent Works'
+
+  // -- Main Project -- //
+
+  //Create main-project container div,  article, a, img, info div (h3, p, ul, li, button)
+
+  let mainProjectContainer     = document.createElement('div')
+      mainProjectArticle  = document.createElement('ARTICLE')
+      mainProjectImgContainer = document.createElement('a')
+      mainProjectImg = document.createElement('img')
+      mainProjectInfoContainer = document.createElement('div')
+      mainProjectInfoH3 = document.createElement('h3')
+      mainProjectInfoP = document.createElement('p')
+      mainProjectUl = document.createElement('ul')
+      mainProjectButton = document.createElement('button')
+
+
+  //Add css classes and ids to use in css and content
+
+  mainProjectContainer.classList.add('main-project-container')
+  mainProjectArticle.id = 'main-project'
+  mainProjectImgContainer.classList.add('project-img')
+  mainProjectImg.src = projectData[0]['featured image']
+  mainProjectInfoContainer.classList.add('project-info')
+  mainProjectInfoH3.textContent = projectData[0]['title']
+  mainProjectInfoP.textContent = projectData[0]['description']
+  mainProjectButton.classList.add('seeButton')
+  mainProjectButton.id = '0'
+  mainProjectButton.textContent = 'See Project'
+
+  //Add li to Ul main project 
+
+  projectData[0]['technologies'].forEach( (element) => {
+    let mainProjectLi = document.createElement('li')
+    mainProjectUl.appendChild(mainProjectLi)
+    mainProjectLi.textContent = element
+  }) 
+
+
+  // -- Other Projects -- //
+
+  //Create other-projects container div,  article, a, img, info div (h3, p, ul, li, button)
+
+  let flexContainer = document.createElement('div')
+      projectsCointainer  = document.createElement('div')
+
+      projectData.forEach( (element, index) => {
+        if (index > 0) {
+
+            //Create projects article,h3,p, ul, button
+
+        let projectsArticle = document.createElement('ARTICLE')
+        projectsArticleH3 = document.createElement('h3')
+        projectsArticleP = document.createElement('p')
+        projectsArticleUl = document.createElement('ul')
+        projectsArticleButton = document.createElement('button')
+    
+        //Add classes and ids to use in css
+
+        projectsArticle.classList.add('other-projects')
+        projectsArticleH3.textContent = projectData[1]['title']
+        projectsArticleP.textContent = projectData[1]['description']
+        projectsArticleButton.classList.add('seeButton')
+        projectsArticleButton.id = '1'
+        projectsArticleButton.textContent = 'See Project'
+
+        //Add li to Ul main project 
+
+        projectData[1]['technologies'].forEach( (element) => {
+          let projectsArticleLi = document.createElement('li')
+          projectsArticleUl.appendChild(projectsArticleLi)
+          projectsArticleLi.textContent = element
+          }) 
+        
+        //append elements
+        projectsCointainer.appendChild(projectsArticle)
+        projectsArticle.append(projectsArticleH3, projectsArticleH3, projectsArticleP, projectsArticleUl, projectsArticleButton)
+            }       
+      })
+      
+
+  //Add classes and ids to use in css
+
+  flexContainer.classList.add('test')
+  projectsCointainer.classList.add('article-container')
+
+  //append to the html
+
+  porfolioSection.append(porfolioTitle, mainProjectContainer, flexContainer)
+  porfolioTitle.append(portfolioTitleh2, porfolioTitleLine)
+  mainProjectContainer.appendChild(mainProjectArticle)
+  mainProjectArticle.append(mainProjectImgContainer, mainProjectInfoContainer)
+  mainProjectImgContainer.appendChild(mainProjectImg)
+  mainProjectInfoContainer.append(mainProjectInfoH3, mainProjectInfoP, mainProjectUl, mainProjectButton)
+  flexContainer.appendChild(projectsCointainer)
+
+
+  
+
+
+/*   porfolioSection.innerHTML = `
     <div class="portfolio-title">
       <h2>My Recent Works</h2>
       <div class="portfolio-line"></div>
@@ -133,80 +247,10 @@ let projectData = [
           </ul>
           <button type="button" class="seeButton"  id="1">See Project</button>
         </article>
-
-        <article class="other-projects">
-          <h3>Profesional Art Printing Data</h3>
-          <p>
-            A daily selection of privately personalized reads; no accounts
-            or sign-ups required. has been the industry's standard
-          </p>
-          <ul>
-            <li>HTML</li>
-            <li>bootstrap</li>
-            <li>Ruby</li>
-          </ul>
-          <button type="button" class="seeButton"  id="2">See Project</button>
-        </article>
-
-        <article class="other-projects">
-          <h3>Profesional Art Printing Data</h3>
-          <p>
-            A daily selection of privately personalized reads; no accounts
-            or sign-ups required. has been the industry's standard
-          </p>
-          <ul>
-            <li>HTML</li>
-            <li>bootstrap</li>
-            <li>Ruby</li>
-          </ul>
-          <button type="button" class="seeButton" id="3">See Project</button>
-        </article>
-
-        <article class="other-projects">
-          <h3>Profesional Art Printing Data</h3>
-          <p>
-            A daily selection of privately personalized reads; no accounts
-            or sign-ups required. has been the industry's standard
-          </p>
-          <ul>
-            <li>HTML</li>
-            <li>bootstrap</li>
-            <li>Ruby</li>
-          </ul>
-          <button type="button" class="seeButton" id="4">See Project</button>
-        </article>
-
-        <article class="other-projects">
-          <h3>Profesional Art Printing Data</h3>
-          <p>
-            A daily selection of privately personalized reads; no accounts
-            or sign-ups required. has been the industry's standard
-          </p>
-          <ul>
-            <li>HTML</li>
-            <li>bootstrap</li>
-            <li>Ruby</li>
-          </ul>
-          <button type="button" class="seeButton" id="5">See Project</button>
-        </article>
-
-        <article class="other-projects">
-          <h3>Profesional Art Printing Data</h3>
-          <p>
-            A daily selection of privately personalized reads; no accounts
-            or sign-ups required. has been the industry's standard
-          </p>
-          <ul>
-            <li>HTML</li>
-            <li>bootstrap</li>
-            <li>Ruby</li>
-          </ul>
-          <button type="button" class="seeButton" id="6">See Project</button>
-        </article>
       </div>
     </div>
 `
-
+ */
 
 /*    ------=========     Pop Up    =========------    */
 
@@ -261,12 +305,11 @@ function createPopUp (event){
 
   //Add Li to Ul
 
-  projectData[projectButtonId]['technologies'].forEach( (element, index) => {
+  projectData[projectButtonId]['technologies'].forEach( (element) => {
     projectLi = document.createElement('li')
     projectUl.appendChild(projectLi)
-    projectLi.textContent = projectData[projectButtonId].technologies[index];
+    projectLi.textContent = element
   })
-
 
   //close item
 
