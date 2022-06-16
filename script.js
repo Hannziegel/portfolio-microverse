@@ -55,14 +55,14 @@ let projectData = [
     'link to live version':'https://hannziegel.github.io/portfolio/', 
     'link to source': 'https://github.com/Hannziegel/portfolio'
   },
-  { 'title':'Website Protfolio ',
+  { 'title':'Profesional Art Printing Data More',
     'description':'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard', 
     'featured image':'./assets/imgs/snapshoot_portfolio_mobile.jpg',
     'technologies':['html','Bootstrap','Ruby'],
     'link to live version':'https://hannziegel.github.io/portfolio/', 
     'link to source': 'https://github.com/Hannziegel/portfolio'
   },
-  { 'title':'Website Protfolio ',
+  { 'title':'Data Dashboard Healthcare',
     'description':'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard', 
     'featured image':'./assets/imgs/snapshoot_portfolio_mobile.jpg',
     'technologies':['html','Bootstrap','Ruby'],
@@ -151,35 +151,35 @@ let projectData = [
       projectData.forEach( (element, index) => {
         if (index > 0) {
 
-            //Create projects article,h3,p, ul, button
+          //Create projects article,h3,p, ul, button
 
-        let projectsArticle = document.createElement('ARTICLE')
-        projectsArticleH3 = document.createElement('h3')
-        projectsArticleP = document.createElement('p')
-        projectsArticleUl = document.createElement('ul')
-        projectsArticleButton = document.createElement('button')
-    
-        //Add classes and ids to use in css
+          let projectsArticle = document.createElement('ARTICLE')
+          projectsArticleH3 = document.createElement('h3')
+          projectsArticleP = document.createElement('p')
+          projectsArticleUl = document.createElement('ul')
+          projectsArticleButton = document.createElement('button')
+      
+          //Add classes and ids to use in css
 
-        projectsArticle.classList.add('other-projects')
-        projectsArticleH3.textContent = projectData[1]['title']
-        projectsArticleP.textContent = projectData[1]['description']
-        projectsArticleButton.classList.add('seeButton')
-        projectsArticleButton.id = '1'
-        projectsArticleButton.textContent = 'See Project'
+          projectsArticle.classList.add('other-projects')
+          projectsArticleH3.textContent = element.title
+          projectsArticleP.textContent = element.description
+          projectsArticleButton.classList.add('seeButton')
+          projectsArticleButton.id = index
+          projectsArticleButton.textContent = 'See Project'
 
-        //Add li to Ul main project 
+          //Add li to Ul main project 
 
-        projectData[1]['technologies'].forEach( (element) => {
-          let projectsArticleLi = document.createElement('li')
-          projectsArticleUl.appendChild(projectsArticleLi)
-          projectsArticleLi.textContent = element
-          }) 
-        
-        //append elements
-        projectsCointainer.appendChild(projectsArticle)
-        projectsArticle.append(projectsArticleH3, projectsArticleH3, projectsArticleP, projectsArticleUl, projectsArticleButton)
-            }       
+          projectData[index]['technologies'].forEach( (element) => {
+            let projectsArticleLi = document.createElement('li')
+            projectsArticleUl.appendChild(projectsArticleLi)
+            projectsArticleLi.textContent = element
+            }) 
+          
+          //append elements
+          projectsCointainer.appendChild(projectsArticle)
+          projectsArticle.append(projectsArticleH3, projectsArticleH3, projectsArticleP, projectsArticleUl, projectsArticleButton)
+        }       
       })
       
 
@@ -197,60 +197,6 @@ let projectData = [
   mainProjectImgContainer.appendChild(mainProjectImg)
   mainProjectInfoContainer.append(mainProjectInfoH3, mainProjectInfoP, mainProjectUl, mainProjectButton)
   flexContainer.appendChild(projectsCointainer)
-
-
-  
-
-
-/*   porfolioSection.innerHTML = `
-    <div class="portfolio-title">
-      <h2>My Recent Works</h2>
-      <div class="portfolio-line"></div>
-    </div>
-    <div class="main-project-container">
-      <article id="main-project">
-        <a href="" class="project-img">
-          <img src="./assets/imgs/projects/mainprojectimg.jpg" alt="" />
-        </a>
-        <div class="project-info">
-          <h3>Multi-Post Stories</h3>
-          <p>
-            A daily selection of privately personalized reads; no accounts
-            or sign-ups required. has been the industry's standard dummy
-            text ever since the 1500s, when an unknown printer took a
-            standard dummy text.
-          </p>
-          <ul>
-            <li>CSS</li>
-            <li>HTML</li>
-            <li>bootstrap</li>
-            <li>Ruby</li>
-          </ul>
-
-          <button type="button" class="seeButton" id="0">See Project</button>
-        </div>
-      </article>
-    </div>
-
-    <div class="test">
-      <div class="article-container">
-        <article class="other-projects">
-          <h3>Profesional Art Printing Data</h3>
-          <p>
-            A daily selection of privately personalized reads; no accounts
-            or sign-ups required. has been the industry's standard
-          </p>
-          <ul>
-            <li>HTML</li>
-            <li>bootstrap</li>
-            <li>Ruby</li>
-          </ul>
-          <button type="button" class="seeButton"  id="1">See Project</button>
-        </article>
-      </div>
-    </div>
-`
- */
 
 /*    ------=========     Pop Up    =========------    */
 
@@ -270,19 +216,24 @@ function createPopUp (event){
 
   //create elements
 
-  let projectTitle = document.createElement('h2'),
+  let projectTitleContainer = document.createElement('div')
+      projectTitle = document.createElement('h2'),
       projectCloseContainner = document.createElement('a'),
       projectCloseIcon = document.createElement('i'),
       projectUl = document.createElement('ul'),
       projectImg = document.createElement('img'),
+      projectInfoContainer = document.createElement('div')
       projectDescription = document.createElement('p'),
       buttonContainner = document.createElement('div'),
       seeLiveButton = document.createElement('a'),
       seeSourceButton = document.createElement('a')
-
+      projectImgInfoContainer = document.createElement('div')
   //append elements inside the div
 
-  projectPopUp.append(projectTitle, projectCloseContainner, projectCloseIcon, projectUl, projectImg, projectDescription, buttonContainner)
+  projectPopUp.append(projectTitleContainer, projectUl , projectImgInfoContainer )
+  projectTitleContainer.append(projectTitle, projectCloseContainner)
+  projectImgInfoContainer.append(projectImg, projectInfoContainer)
+  projectInfoContainer.append(projectDescription, buttonContainner)
   buttonContainner.append(seeLiveButton, seeSourceButton)
   projectCloseContainner.appendChild(projectCloseIcon)
 
@@ -292,16 +243,21 @@ function createPopUp (event){
 
   //add content to the elements 
 
+  projectTitleContainer.classList.add('projectTitleContiner')
   projectTitle.textContent = projectData[projectButtonId]['title']
+  projectImgInfoContainer.classList.add('projectImgInfoContainer')
+  projectInfoContainer.classList.add('projectInfoContainer')
   projectDescription.textContent = projectData[projectButtonId]['description']
   projectImg.src = projectData[projectButtonId]['featured image']
   buttonContainner.classList.add('buttonContainner')
   seeLiveButton.href = projectData[projectButtonId]['link to live version']
   seeLiveButton.target = '_blank'
   seeLiveButton.textContent = 'See Live'
+  seeLiveButton.id = 'seeLiveButton'
   seeSourceButton.href = projectData[projectButtonId]['link to source']
   seeSourceButton.target = '_blank'
   seeSourceButton.textContent = 'See Source'
+  seeSourceButton.id = 'seeSourceButton'
 
   //Add Li to Ul
 

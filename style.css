@@ -214,6 +214,7 @@ header nav {
   display: flex;
   flex-direction: column;
   gap: var(--gap-24);
+  margin: 120px 0;
 }
 
 .headline h2 {
@@ -412,7 +413,7 @@ header nav {
 
 /* Contact Section */
 .contact {
-  padding: 120px 120px;
+  padding: 120px 0;
 }
 
 .contact p {
@@ -633,9 +634,14 @@ footer {
 
 /* Project Pop Up */
 
+#close-Button {
+  cursor: pointer;
+}
+
 .seeButton {
   z-index: 9;
 }
+
 .projectPopUp {
   position: fixed;
   height: 90%;
@@ -643,7 +649,7 @@ footer {
   top: 5vh;
   left: 10vw;
   background-color: #fff;
-  box-shadow: 0 0 20px 100px #262626e5;
+  box-shadow: 0 0 20px 80vh #262626e5;
   z-index: 15;
   display: flex;
   flex-direction: column;
@@ -651,9 +657,24 @@ footer {
   gap: 24px;
 }
 
+.projectTitleContiner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.projectInfoContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
 .buttonContainner {
   display: flex;
   justify-content: space-between;
+}
+
+.liveButtonContainer .sourceButtonContainer {
+  background-color: #FF6B00;
 }
 
 .buttonContainner a {
@@ -665,11 +686,9 @@ footer {
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
-  padding-right: 45px;
-  background-image: url('./assets/icons/githubD.svg');
-  background-repeat: no-repeat;
-  background-position: right;
+  padding-right: 35px;
 }
+
 .projectPopUp h2{
   font-family: 'Roboto', sans-serif;
   font-style: normal;
@@ -692,6 +711,7 @@ footer {
 .projectPopUp ul{
   display: flex;
   gap: 10px;
+  margin-top: 60px;
 }
 
 .projectPopUp ul li {
@@ -704,6 +724,19 @@ footer {
   font-size: 13px;
   line-height: 16px;
   color: #3C3A39;
+  cursor: default;
+}
+
+#seeLiveButton {
+  background-image: url('./assets/icons/liveIcon2.svg');
+  background-repeat: no-repeat;
+  background-position: 92% 50%;
+}
+
+#seeSourceButton {
+  background-image: url('./assets/icons/githubIcon2.svg');
+  background-repeat: no-repeat;
+  background-position: 95% 50%;
 }
 
 /* ------===== MEDIA QUERIES =====------ */
@@ -757,7 +790,6 @@ footer {
   }
 
   .headline-intro {
-    margin: 100px 0;
     gap: 24px;
   }
 
@@ -901,6 +933,33 @@ footer {
     flex-direction: row;
   }
 
+
+  /* Project Pop Up */
+
+  .projectPopUp ul {
+    margin-top: 0;
+  }
+
+  .projectImgInfoContainer {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .projectInfoContainer {
+    padding: 0 25px;
+    justify-content: space-between;
+  }
+  
+  .buttonContainner {
+    justify-content: flex-start;
+    gap: 24px;
+  }
+
+  .projectPopUp img {
+    width: 659px;
+    height: 448px;
+  }
+
   /* #main-project */
 
   #main-project {
@@ -927,4 +986,6 @@ footer {
     width: 684px;
     height: 448px;
   }
+
+  
 }
