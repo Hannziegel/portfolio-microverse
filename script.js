@@ -27,176 +27,197 @@ document.querySelector('.menu-links').addEventListener('click', () => {
 // object proprieties
 
 let projectData = [
-  { 'title':'Multi Post Stories',
-    'description':'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent', 
-    'featured image':'./assets/imgs/projects/mainprojectimg.jpg',
-    'technologies':['html','Bootstrap','Ruby on rails'],
-    'link to live version':'https://hannziegel.github.io/portfolio/', 
-    'link to source': 'https://github.com/Hannziegel/portfolio'
+  {
+    title: 'Multi Post Stories',
+    description:
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    'featured image': './assets/imgs/projects/mainprojectimg.jpg',
+    technologies: ['html', 'Bootstrap', 'Ruby on rails'],
+    'link to live version': 'https://hannziegel.github.io/portfolio/',
+    'link to source': 'https://github.com/Hannziegel/portfolio',
   },
-  { 'title':'Profesional Art Printing Data More',
-    'description':'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard', 
-    'featured image':'./assets/imgs/snapshoot_portfolio_mobile.jpg',
-    'technologies':['html','Bootstrap','Ruby'],
-    'link to live version':'https://hannziegel.github.io/portfolio/', 
-    'link to source': 'https://github.com/Hannziegel/portfolio'
+  {
+    title: 'Profesional Art Printing Data More',
+    description:
+      'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
+    'featured image': './assets/imgs/snapshoot_portfolio_mobile.jpg',
+    technologies: ['html', 'Bootstrap', 'Ruby'],
+    'link to live version': 'https://hannziegel.github.io/portfolio/',
+    'link to source': 'https://github.com/Hannziegel/portfolio',
   },
-  { 'title':'Data Dashboard Healthcare',
-    'description':'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard', 
-    'featured image':'./assets/imgs/snapshoot_portfolio_mobile.jpg',
-    'technologies':['html','Bootstrap','Ruby'],
-    'link to live version':'https://hannziegel.github.io/portfolio/', 
-    'link to source': 'https://github.com/Hannziegel/portfolio'
+  {
+    title: 'Data Dashboard Healthcare',
+    description:
+      'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
+    'featured image': './assets/imgs/snapshoot_portfolio_mobile.jpg',
+    technologies: ['html', 'Bootstrap', 'Ruby'],
+    'link to live version': 'https://hannziegel.github.io/portfolio/',
+    'link to source': 'https://github.com/Hannziegel/portfolio',
   },
-  { 'title':'Website Protfolio ',
-    'description':'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard', 
-    'featured image':'./assets/imgs/snapshoot_portfolio_mobile.jpg',
-    'technologies':['html','Bootstrap','Ruby'],
-    'link to live version':'https://hannziegel.github.io/portfolio/', 
-    'link to source': 'https://github.com/Hannziegel/portfolio'
+  {
+    title: 'Website Protfolio ',
+    description:
+      'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
+    'featured image': './assets/imgs/snapshoot_portfolio_mobile.jpg',
+    technologies: ['html', 'Bootstrap', 'Ruby'],
+    'link to live version': 'https://hannziegel.github.io/portfolio/',
+    'link to source': 'https://github.com/Hannziegel/portfolio',
   },
-  { 'title':'Profesional Art Printing Data More',
-    'description':'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard', 
-    'featured image':'./assets/imgs/snapshoot_portfolio_mobile.jpg',
-    'technologies':['html','Bootstrap','Ruby'],
-    'link to live version':'https://hannziegel.github.io/portfolio/', 
-    'link to source': 'https://github.com/Hannziegel/portfolio'
+  {
+    title: 'Profesional Art Printing Data More',
+    description:
+      'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
+    'featured image': './assets/imgs/snapshoot_portfolio_mobile.jpg',
+    technologies: ['html', 'Bootstrap', 'Ruby'],
+    'link to live version': 'https://hannziegel.github.io/portfolio/',
+    'link to source': 'https://github.com/Hannziegel/portfolio',
   },
-  { 'title':'Data Dashboard Healthcare',
-    'description':'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard', 
-    'featured image':'./assets/imgs/snapshoot_portfolio_mobile.jpg',
-    'technologies':['html','Bootstrap','Ruby'],
-    'link to live version':'https://hannziegel.github.io/portfolio/', 
-    'link to source': 'https://github.com/Hannziegel/portfolio'
+  {
+    title: 'Data Dashboard Healthcare',
+    description:
+      'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
+    'featured image': './assets/imgs/snapshoot_portfolio_mobile.jpg',
+    technologies: ['html', 'Bootstrap', 'Ruby'],
+    'link to live version': 'https://hannziegel.github.io/portfolio/',
+    'link to source': 'https://github.com/Hannziegel/portfolio',
   },
-  { 'title':'Website Protfolio ',
-    'description':'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard', 
-    'featured image':'./assets/imgs/snapshoot_portfolio_mobile.jpg',
-    'technologies':['html','Bootstrap','Ruby'],
-    'link to live version':'https://hannziegel.github.io/portfolio/', 
-    'link to source': 'https://github.com/Hannziegel/portfolio'
-  }
-]
+  {
+    title: 'Website Protfolio ',
+    description:
+      'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
+    'featured image': './assets/imgs/snapshoot_portfolio_mobile.jpg',
+    technologies: ['html', 'Bootstrap', 'Ruby'],
+    'link to live version': 'https://hannziegel.github.io/portfolio/',
+    'link to source': 'https://github.com/Hannziegel/portfolio',
+  },
+];
 
 /*    ------=========     Portfolio Section    =========------    */
 
-  //create portfolio section, add portfolio class to use in css, add portfolio id to use in js
-  let porfolioSection = document.createElement('SECTION');
-  porfolioSection.classList.add('portfolio')
-  porfolioSection.id = 'portfolio'
-  
-  //place porftolio section before about section on html
-  mainPosition = document.getElementById('main')
-  aboutSectionPosition = document.getElementById('about')
-  mainPosition.insertBefore(porfolioSection, aboutSectionPosition)
+//create portfolio section, add portfolio class to use in css, add portfolio id to use in js
+let porfolioSection = document.createElement('SECTION');
+porfolioSection.classList.add('portfolio');
+porfolioSection.id = 'portfolio';
 
-  // -- Porfolio Title -- //
+//place porftolio section before about section on html
+mainPosition = document.getElementById('main');
+aboutSectionPosition = document.getElementById('about');
+mainPosition.insertBefore(porfolioSection, aboutSectionPosition);
 
-  //Create portfolio-title div and put h2 and div inside
+// -- Porfolio Title -- //
 
-  let porfolioTitle     = document.createElement('div')
-      portfolioTitleh2  = document.createElement('h2')
-      porfolioTitleLine = document.createElement('div')
+//Create portfolio-title div and put h2 and div inside
 
-  //Add css classes to use in css and add content    
+let porfolioTitle = document.createElement('div');
+portfolioTitleh2 = document.createElement('h2');
+porfolioTitleLine = document.createElement('div');
 
-  porfolioTitle.classList.add('portfolio-title')
-  porfolioTitleLine.classList.add('portfolio-line')
-  portfolioTitleh2.textContent = 'My Recent Works'
+//Add css classes to use in css and add content
 
-  // -- Main Project -- //
+porfolioTitle.classList.add('portfolio-title');
+porfolioTitleLine.classList.add('portfolio-line');
+portfolioTitleh2.textContent = 'My Recent Works';
 
-  //Create main-project container div,  article, a, img, info div (h3, p, ul, li, button)
+// -- Main Project -- //
 
-  let mainProjectContainer     = document.createElement('div')
-      mainProjectArticle  = document.createElement('ARTICLE')
-      mainProjectImgContainer = document.createElement('a')
-      mainProjectImg = document.createElement('img')
-      mainProjectInfoContainer = document.createElement('div')
-      mainProjectInfoH3 = document.createElement('h3')
-      mainProjectInfoP = document.createElement('p')
-      mainProjectUl = document.createElement('ul')
-      mainProjectButton = document.createElement('button')
+//Create main-project container div,  article, a, img, info div (h3, p, ul, li, button)
 
+let mainProjectContainer = document.createElement('div');
+mainProjectArticle = document.createElement('ARTICLE');
+mainProjectImgContainer = document.createElement('a');
+mainProjectImg = document.createElement('img');
+mainProjectInfoContainer = document.createElement('div');
+mainProjectInfoH3 = document.createElement('h3');
+mainProjectInfoP = document.createElement('p');
+mainProjectUl = document.createElement('ul');
+mainProjectButton = document.createElement('button');
 
-  //Add css classes and ids to use in css and content
+//Add css classes and ids to use in css and content
 
-  mainProjectContainer.classList.add('main-project-container')
-  mainProjectArticle.id = 'main-project'
-  mainProjectImgContainer.classList.add('project-img')
-  mainProjectImg.src = projectData[0]['featured image']
-  mainProjectInfoContainer.classList.add('project-info')
-  mainProjectInfoH3.textContent = projectData[0]['title']
-  mainProjectInfoP.textContent = projectData[0]['description']
-  mainProjectButton.classList.add('seeButton')
-  mainProjectButton.id = '0'
-  mainProjectButton.textContent = 'See Project'
+mainProjectContainer.classList.add('main-project-container');
+mainProjectArticle.id = 'main-project';
+mainProjectImgContainer.classList.add('project-img');
+mainProjectImg.src = projectData[0]['featured image'];
+mainProjectInfoContainer.classList.add('project-info');
+mainProjectInfoH3.textContent = projectData[0]['title'];
+mainProjectInfoP.textContent = projectData[0]['description'];
+mainProjectButton.classList.add('seeButton');
+mainProjectButton.id = '0';
+mainProjectButton.textContent = 'See Project';
 
-  //Add li to Ul main project 
+//Add li to Ul main project
 
-  projectData[0]['technologies'].forEach( (element) => {
-    let mainProjectLi = document.createElement('li')
-    mainProjectUl.appendChild(mainProjectLi)
-    mainProjectLi.textContent = element
-  }) 
+projectData[0]['technologies'].forEach((element) => {
+  let mainProjectLi = document.createElement('li');
+  mainProjectUl.appendChild(mainProjectLi);
+  mainProjectLi.textContent = element;
+});
 
+// -- Other Projects -- //
 
-  // -- Other Projects -- //
+//Create other-projects container div,  article, a, img, info div (h3, p, ul, li, button)
 
-  //Create other-projects container div,  article, a, img, info div (h3, p, ul, li, button)
+let flexContainer = document.createElement('div');
+projectsCointainer = document.createElement('div');
 
-  let flexContainer = document.createElement('div')
-      projectsCointainer  = document.createElement('div')
+projectData.forEach((element, index) => {
+  if (index > 0) {
+    //Create projects article,h3,p, ul, button
 
-      projectData.forEach( (element, index) => {
-        if (index > 0) {
+    let projectsArticle = document.createElement('ARTICLE');
+    projectsArticleH3 = document.createElement('h3');
+    projectsArticleP = document.createElement('p');
+    projectsArticleUl = document.createElement('ul');
+    projectsArticleButton = document.createElement('button');
 
-          //Create projects article,h3,p, ul, button
+    //Add classes and ids to use in css
 
-          let projectsArticle = document.createElement('ARTICLE')
-          projectsArticleH3 = document.createElement('h3')
-          projectsArticleP = document.createElement('p')
-          projectsArticleUl = document.createElement('ul')
-          projectsArticleButton = document.createElement('button')
-      
-          //Add classes and ids to use in css
+    projectsArticle.classList.add('other-projects');
+    projectsArticleH3.textContent = element.title;
+    projectsArticleP.textContent = element.description;
+    projectsArticleButton.classList.add('seeButton');
+    projectsArticleButton.id = index;
+    projectsArticleButton.textContent = 'See Project';
 
-          projectsArticle.classList.add('other-projects')
-          projectsArticleH3.textContent = element.title
-          projectsArticleP.textContent = element.description
-          projectsArticleButton.classList.add('seeButton')
-          projectsArticleButton.id = index
-          projectsArticleButton.textContent = 'See Project'
+    //Add li to Ul main project
 
-          //Add li to Ul main project 
+    projectData[index]['technologies'].forEach((element) => {
+      let projectsArticleLi = document.createElement('li');
+      projectsArticleUl.appendChild(projectsArticleLi);
+      projectsArticleLi.textContent = element;
+    });
 
-          projectData[index]['technologies'].forEach( (element) => {
-            let projectsArticleLi = document.createElement('li')
-            projectsArticleUl.appendChild(projectsArticleLi)
-            projectsArticleLi.textContent = element
-            }) 
-          
-          //append elements
-          projectsCointainer.appendChild(projectsArticle)
-          projectsArticle.append(projectsArticleH3, projectsArticleH3, projectsArticleP, projectsArticleUl, projectsArticleButton)
-        }       
-      })
-      
+    //append elements
+    projectsCointainer.appendChild(projectsArticle);
+    projectsArticle.append(
+      projectsArticleH3,
+      projectsArticleH3,
+      projectsArticleP,
+      projectsArticleUl,
+      projectsArticleButton
+    );
+  }
+});
 
-  //Add classes and ids to use in css
+//Add classes and ids to use in css
 
-  flexContainer.classList.add('test')
-  projectsCointainer.classList.add('article-container')
+flexContainer.classList.add('test');
+projectsCointainer.classList.add('article-container');
 
-  //append to the html
+//append to the html
 
-  porfolioSection.append(porfolioTitle, mainProjectContainer, flexContainer)
-  porfolioTitle.append(portfolioTitleh2, porfolioTitleLine)
-  mainProjectContainer.appendChild(mainProjectArticle)
-  mainProjectArticle.append(mainProjectImgContainer, mainProjectInfoContainer)
-  mainProjectImgContainer.appendChild(mainProjectImg)
-  mainProjectInfoContainer.append(mainProjectInfoH3, mainProjectInfoP, mainProjectUl, mainProjectButton)
-  flexContainer.appendChild(projectsCointainer)
+porfolioSection.append(porfolioTitle, mainProjectContainer, flexContainer);
+porfolioTitle.append(portfolioTitleh2, porfolioTitleLine);
+mainProjectContainer.appendChild(mainProjectArticle);
+mainProjectArticle.append(mainProjectImgContainer, mainProjectInfoContainer);
+mainProjectImgContainer.appendChild(mainProjectImg);
+mainProjectInfoContainer.append(
+  mainProjectInfoH3,
+  mainProjectInfoP,
+  mainProjectUl,
+  mainProjectButton
+);
+flexContainer.appendChild(projectsCointainer);
 
 /*    ------=========     Pop Up    =========------    */
 
@@ -204,80 +225,84 @@ let projectData = [
 
 const addButton = document.querySelectorAll('.seeButton');
 
-addButton.forEach((btn)=> {
-  btn.addEventListener('click', createPopUp)
+addButton.forEach((btn) => {
+  btn.addEventListener('click', createPopUp);
 });
 
-function createPopUp (event){
+function createPopUp(event) {
   //create popUp div, append it to the main section, add css style class
   let projectPopUp = document.createElement('div');
-  document.body.querySelector('main').appendChild(projectPopUp)
-  projectPopUp.classList.add('projectPopUp')
+  document.body.querySelector('main').appendChild(projectPopUp);
+  projectPopUp.classList.add('projectPopUp');
 
   //create elements
 
-  let projectTitleContainer = document.createElement('div')
-      projectTitle = document.createElement('h2'),
-      projectCloseContainner = document.createElement('a'),
-      projectCloseIcon = document.createElement('i'),
-      projectUl = document.createElement('ul'),
-      projectImg = document.createElement('img'),
-      projectInfoContainer = document.createElement('div')
-      projectDescription = document.createElement('p'),
-      buttonContainner = document.createElement('div'),
-      seeLiveButton = document.createElement('a'),
-      seeSourceButton = document.createElement('a')
-      projectImgInfoContainer = document.createElement('div')
+  let projectTitleContainer = document.createElement('div');
+  (projectTitle = document.createElement('h2')),
+    (projectCloseContainner = document.createElement('a')),
+    (projectCloseIcon = document.createElement('i')),
+    (projectUl = document.createElement('ul')),
+    (projectImg = document.createElement('img')),
+    (projectInfoContainer = document.createElement('div'));
+  (projectDescription = document.createElement('p')),
+    (buttonContainner = document.createElement('div')),
+    (seeLiveButton = document.createElement('a')),
+    (seeSourceButton = document.createElement('a'));
+  projectImgInfoContainer = document.createElement('div');
   //append elements inside the div
 
-  projectPopUp.append(projectTitleContainer, projectUl , projectImgInfoContainer )
-  projectTitleContainer.append(projectTitle, projectCloseContainner)
-  projectImgInfoContainer.append(projectImg, projectInfoContainer)
-  projectInfoContainer.append(projectDescription, buttonContainner)
-  buttonContainner.append(seeLiveButton, seeSourceButton)
-  projectCloseContainner.appendChild(projectCloseIcon)
+  projectPopUp.append(
+    projectTitleContainer,
+    projectUl,
+    projectImgInfoContainer
+  );
+  projectTitleContainer.append(projectTitle, projectCloseContainner);
+  projectImgInfoContainer.append(projectImg, projectInfoContainer);
+  projectInfoContainer.append(projectDescription, buttonContainner);
+  buttonContainner.append(seeLiveButton, seeSourceButton);
+  projectCloseContainner.appendChild(projectCloseIcon);
 
   //id for buttons
 
-  const projectButtonId = parseInt(event.target.id, 10) 
+  const projectButtonId = parseInt(event.target.id, 10);
 
-  //add content to the elements 
+  //add content to the elements
 
-  projectTitleContainer.classList.add('projectTitleContiner')
-  projectTitle.textContent = projectData[projectButtonId]['title']
-  projectImgInfoContainer.classList.add('projectImgInfoContainer')
-  projectInfoContainer.classList.add('projectInfoContainer')
-  projectDescription.textContent = projectData[projectButtonId]['description']
-  projectImg.src = projectData[projectButtonId]['featured image']
-  buttonContainner.classList.add('buttonContainner')
-  seeLiveButton.href = projectData[projectButtonId]['link to live version']
-  seeLiveButton.target = '_blank'
-  seeLiveButton.textContent = 'See Live'
-  seeLiveButton.id = 'seeLiveButton'
-  seeSourceButton.href = projectData[projectButtonId]['link to source']
-  seeSourceButton.target = '_blank'
-  seeSourceButton.textContent = 'See Source'
-  seeSourceButton.id = 'seeSourceButton'
+  projectTitleContainer.classList.add('projectTitleContiner');
+  projectTitle.textContent = projectData[projectButtonId]['title'];
+  projectImgInfoContainer.classList.add('projectImgInfoContainer');
+  projectInfoContainer.classList.add('projectInfoContainer');
+  projectDescription.textContent = projectData[projectButtonId]['description'];
+  projectImg.src = projectData[projectButtonId]['featured image'];
+  buttonContainner.classList.add('buttonContainner');
+  seeLiveButton.href = projectData[projectButtonId]['link to live version'];
+  seeLiveButton.target = '_blank';
+  seeLiveButton.textContent = 'See Live';
+  seeLiveButton.id = 'seeLiveButton';
+  seeSourceButton.href = projectData[projectButtonId]['link to source'];
+  seeSourceButton.target = '_blank';
+  seeSourceButton.textContent = 'See Source';
+  seeSourceButton.id = 'seeSourceButton';
 
   //Add Li to Ul
 
-  projectData[projectButtonId]['technologies'].forEach( (element) => {
-    projectLi = document.createElement('li')
-    projectUl.appendChild(projectLi)
-    projectLi.textContent = element
-  })
+  projectData[projectButtonId]['technologies'].forEach((element) => {
+    projectLi = document.createElement('li');
+    projectUl.appendChild(projectLi);
+    projectLi.textContent = element;
+  });
 
   //close item
 
-  projectCloseIcon.classList.add('material-icons')
-  projectCloseIcon.textContent = 'close'
-  projectCloseContainner.id = 'close-Button'
+  projectCloseIcon.classList.add('material-icons');
+  projectCloseIcon.textContent = 'close';
+  projectCloseContainner.id = 'close-Button';
 
   //close icon function
 
   const clickCloseButton = document.getElementById('close-Button');
-  clickCloseButton.addEventListener('click', closeButton)
-  function closeButton(){
-    projectPopUp.remove()
+  clickCloseButton.addEventListener('click', closeButton);
+  function closeButton() {
+    projectPopUp.remove();
   }
 }
