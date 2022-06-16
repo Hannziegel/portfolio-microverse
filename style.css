@@ -939,9 +939,9 @@ footer {
   }
 
   /* Project Pop Up */
-  
+
   .projectPopUp {
-    top:  20%;
+    top: 20%;
     left: 10%;
   }
 
@@ -971,7 +971,7 @@ footer {
 
   .projectPopUp img {
     min-width: 100px;
-    max-width: auto;
+    max-width: 659px;
     object-fit: contain;
   }
 
