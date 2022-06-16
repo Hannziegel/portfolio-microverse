@@ -657,6 +657,10 @@ footer {
   gap: 24px;
 }
 
+.projectPopUp img {
+  width: 100%;
+}
+
 .projectTitleContiner {
   display: flex;
   justify-content: space-between;
@@ -936,6 +940,12 @@ footer {
 
   /* Project Pop Up */
 
+  .projectPopUp {
+    top: 10vh;
+    left: 10vw;
+    height: 50%;
+  }
+
   .projectPopUp ul {
     margin-top: 0;
   }
@@ -954,7 +964,7 @@ footer {
     justify-content: flex-start;
     gap: 24px;
   }
-
+  
   .projectPopUp img {
     width: 659px;
     height: 448px;
