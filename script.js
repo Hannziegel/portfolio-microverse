@@ -26,7 +26,7 @@ document.querySelector('.menu-links').addEventListener('click', () => {
 
 // object proprieties
 
-let projectData = [
+const projectData = [
   {
     title: 'Multi Post Stories',
     description:
@@ -94,25 +94,25 @@ let projectData = [
 
 /*    ------=========     Portfolio Section    =========------    */
 
-//create portfolio section, add portfolio class to use in css, add portfolio id to use in js
-let porfolioSection = document.createElement('SECTION');
+// create portfolio section, add portfolio class to use in css, add portfolio id to use in js
+const porfolioSection = document.createElement('SECTION');
 porfolioSection.classList.add('portfolio');
 porfolioSection.id = 'portfolio';
 
-//place porftolio section before about section on html
-mainPosition = document.getElementById('main');
-aboutSectionPosition = document.getElementById('about');
+// place porftolio section before about section on html
+const mainPosition = document.getElementById('main');
+const aboutSectionPosition = document.getElementById('about');
 mainPosition.insertBefore(porfolioSection, aboutSectionPosition);
 
 // -- Porfolio Title -- //
 
-//Create portfolio-title div and put h2 and div inside
+// Create portfolio-title div and put h2 and div inside
 
-let porfolioTitle = document.createElement('div');
-portfolioTitleh2 = document.createElement('h2');
-porfolioTitleLine = document.createElement('div');
+const porfolioTitle = document.createElement('div');
+const portfolioTitleh2 = document.createElement('h2');
+const porfolioTitleLine = document.createElement('div');
 
-//Add css classes to use in css and add content
+// Add css classes to use in css and add content
 
 porfolioTitle.classList.add('portfolio-title');
 porfolioTitleLine.classList.add('portfolio-line');
@@ -120,57 +120,57 @@ portfolioTitleh2.textContent = 'My Recent Works';
 
 // -- Main Project -- //
 
-//Create main-project container div,  article, a, img, info div (h3, p, ul, li, button)
+// Create main-project container div,  article, a, img, info div (h3, p, ul, li, button)
 
-let mainProjectContainer = document.createElement('div');
-mainProjectArticle = document.createElement('ARTICLE');
-mainProjectImgContainer = document.createElement('a');
-mainProjectImg = document.createElement('img');
-mainProjectInfoContainer = document.createElement('div');
-mainProjectInfoH3 = document.createElement('h3');
-mainProjectInfoP = document.createElement('p');
-mainProjectUl = document.createElement('ul');
-mainProjectButton = document.createElement('button');
+const  mainProjectContainer = document.createElement('div');
+const mainProjectArticle = document.createElement('ARTICLE');
+const mainProjectImgContainer = document.createElement('a');
+const mainProjectImg = document.createElement('img');
+const mainProjectInfoContainer = document.createElement('div');
+const mainProjectInfoH3 = document.createElement('h3');
+const mainProjectInfoP = document.createElement('p');
+const mainProjectUl = document.createElement('ul');
+const mainProjectButton = document.createElement('button');
 
-//Add css classes and ids to use in css and content
+// Add css classes and ids to use in css and content
 
 mainProjectContainer.classList.add('main-project-container');
 mainProjectArticle.id = 'main-project';
 mainProjectImgContainer.classList.add('project-img');
 mainProjectImg.src = projectData[0]['featured image'];
 mainProjectInfoContainer.classList.add('project-info');
-mainProjectInfoH3.textContent = projectData[0]['title'];
-mainProjectInfoP.textContent = projectData[0]['description'];
+mainProjectInfoH3.textContent = projectData[0].title;
+mainProjectInfoP.textContent = projectData[0].description;
 mainProjectButton.classList.add('seeButton');
 mainProjectButton.id = '0';
 mainProjectButton.textContent = 'See Project';
 
-//Add li to Ul main project
+// Add li to Ul main project
 
-projectData[0]['technologies'].forEach((element) => {
-  let mainProjectLi = document.createElement('li');
+projectData[0].technologies.forEach((element) => {
+  const mainProjectLi = document.createElement('li');
   mainProjectUl.appendChild(mainProjectLi);
   mainProjectLi.textContent = element;
 });
 
 // -- Other Projects -- //
 
-//Create other-projects container div,  article, a, img, info div (h3, p, ul, li, button)
+// Create other-projects container div,  article, a, img, info div (h3, p, ul, li, button)
 
-let flexContainer = document.createElement('div');
-projectsCointainer = document.createElement('div');
+const flexContainer = document.createElement('div');
+const projectsCointainer = document.createElement('div');
 
 projectData.forEach((element, index) => {
   if (index > 0) {
-    //Create projects article,h3,p, ul, button
+    // Create projects article,h3,p, ul, button
 
-    let projectsArticle = document.createElement('ARTICLE');
-    projectsArticleH3 = document.createElement('h3');
-    projectsArticleP = document.createElement('p');
-    projectsArticleUl = document.createElement('ul');
-    projectsArticleButton = document.createElement('button');
+    const projectsArticle = document.createElement('ARTICLE');
+    const projectsArticleH3 = document.createElement('h3');
+    const projectsArticleP = document.createElement('p');
+    const projectsArticleUl = document.createElement('ul');
+    const projectsArticleButton = document.createElement('button');
 
-    //Add classes and ids to use in css
+    // Add classes and ids to use in css
 
     projectsArticle.classList.add('other-projects');
     projectsArticleH3.textContent = element.title;
@@ -179,10 +179,10 @@ projectData.forEach((element, index) => {
     projectsArticleButton.id = index;
     projectsArticleButton.textContent = 'See Project';
 
-    //Add li to Ul main project
+    // Add li to Ul main project
 
-    projectData[index]['technologies'].forEach((element) => {
-      let projectsArticleLi = document.createElement('li');
+    projectData[index].technologies.forEach((element) => {
+      const  projectsArticleLi = document.createElement('li');
       projectsArticleUl.appendChild(projectsArticleLi);
       projectsArticleLi.textContent = element;
     });
@@ -199,12 +199,12 @@ projectData.forEach((element, index) => {
   }
 });
 
-//Add classes and ids to use in css
+// Add classes and ids to use in css
 
 flexContainer.classList.add('test');
 projectsCointainer.classList.add('article-container');
 
-//append to the html
+// append to the html
 
 porfolioSection.append(porfolioTitle, mainProjectContainer, flexContainer);
 porfolioTitle.append(portfolioTitleh2, porfolioTitleLine);
@@ -221,7 +221,7 @@ flexContainer.appendChild(projectsCointainer);
 
 /*    ------=========     Pop Up    =========------    */
 
-//click button
+// click button
 
 const addButton = document.querySelectorAll('.seeButton');
 
@@ -230,26 +230,26 @@ addButton.forEach((btn) => {
 });
 
 function createPopUp(event) {
-  //create popUp div, append it to the main section, add css style class
-  let projectPopUp = document.createElement('div');
+  // create popUp div, append it to the main section, add css style class
+  const  projectPopUp = document.createElement('div');
   document.body.querySelector('main').appendChild(projectPopUp);
   projectPopUp.classList.add('projectPopUp');
 
-  //create elements
+  // create elements
 
-  let projectTitleContainer = document.createElement('div');
-  (projectTitle = document.createElement('h2')),
-    (projectCloseContainner = document.createElement('a')),
-    (projectCloseIcon = document.createElement('i')),
-    (projectUl = document.createElement('ul')),
-    (projectImg = document.createElement('img')),
-    (projectInfoContainer = document.createElement('div'));
-  (projectDescription = document.createElement('p')),
-    (buttonContainner = document.createElement('div')),
-    (seeLiveButton = document.createElement('a')),
-    (seeSourceButton = document.createElement('a'));
-  projectImgInfoContainer = document.createElement('div');
-  //append elements inside the div
+  const projectTitleContainer = document.createElement('div');
+  const projectTitle = document.createElement('h2');
+  const projectCloseContainner = document.createElement('a');
+  const projectCloseIcon = document.createElement('i');
+  const projectUl = document.createElement('ul');
+  const projectImg = document.createElement('img');
+  const projectInfoContainer = document.createElement('div');
+  const projectDescription = document.createElement('p');
+  const buttonContainner = document.createElement('div');
+  const seeLiveButton = document.createElement('a');
+  const seeSourceButton = document.createElement('a');
+  const projectImgInfoContainer = document.createElement('div');
+  // append elements inside the div
 
   projectPopUp.append(
     projectTitleContainer,
@@ -262,11 +262,11 @@ function createPopUp(event) {
   buttonContainner.append(seeLiveButton, seeSourceButton);
   projectCloseContainner.appendChild(projectCloseIcon);
 
-  //id for buttons
+  // id for buttons
 
   const projectButtonId = parseInt(event.target.id, 10);
 
-  //add content to the elements
+  // add content to the elements
 
   projectTitleContainer.classList.add('projectTitleContiner');
   projectTitle.textContent = projectData[projectButtonId]['title'];
@@ -284,21 +284,21 @@ function createPopUp(event) {
   seeSourceButton.textContent = 'See Source';
   seeSourceButton.id = 'seeSourceButton';
 
-  //Add Li to Ul
+  // Add Li to Ul
 
-  projectData[projectButtonId]['technologies'].forEach((element) => {
-    projectLi = document.createElement('li');
+  projectData[projectButtonId].technologies.forEach((element) => {
+    const projectLi = document.createElement('li');
     projectUl.appendChild(projectLi);
     projectLi.textContent = element;
   });
 
-  //close item
+  // close item
 
   projectCloseIcon.classList.add('material-icons');
   projectCloseIcon.textContent = 'close';
   projectCloseContainner.id = 'close-Button';
 
-  //close icon function
+  // close icon function
 
   const clickCloseButton = document.getElementById('close-Button');
   clickCloseButton.addEventListener('click', closeButton);

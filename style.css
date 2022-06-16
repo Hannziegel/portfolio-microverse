@@ -941,8 +941,10 @@ footer {
 
   .projectPopUp {
     top: 10vh;
+    max-height: 700px;
+    width: 85vw;
+    max-width: 1000px;
     left: 10vw;
-    height: 50%;
   }
 
   .projectPopUp ul {
@@ -965,8 +967,8 @@ footer {
   }
 
   .projectPopUp img {
-    width: 659px;
-    height: 448px;
+    max-width: 659px;
+    max-height: 448px;
   }
 
   /* #main-project */
