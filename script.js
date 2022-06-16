@@ -122,7 +122,7 @@ portfolioTitleh2.textContent = 'My Recent Works';
 
 // Create main-project container div,  article, a, img, info div (h3, p, ul, li, button)
 
-const  mainProjectContainer = document.createElement('div');
+const mainProjectContainer = document.createElement('div');
 const mainProjectArticle = document.createElement('ARTICLE');
 const mainProjectImgContainer = document.createElement('a');
 const mainProjectImg = document.createElement('img');
@@ -182,19 +182,19 @@ projectData.forEach((element, index) => {
     // Add li to Ul main project
 
     projectData[index].technologies.forEach((element) => {
-      const  projectsArticleLi = document.createElement('li');
+      const projectsArticleLi = document.createElement('li');
       projectsArticleUl.appendChild(projectsArticleLi);
       projectsArticleLi.textContent = element;
     });
 
-    //append elements
+    // append elements
     projectsCointainer.appendChild(projectsArticle);
     projectsArticle.append(
       projectsArticleH3,
       projectsArticleH3,
       projectsArticleP,
       projectsArticleUl,
-      projectsArticleButton
+      projectsArticleButton,
     );
   }
 });
@@ -215,7 +215,7 @@ mainProjectInfoContainer.append(
   mainProjectInfoH3,
   mainProjectInfoP,
   mainProjectUl,
-  mainProjectButton
+  mainProjectButton,
 );
 flexContainer.appendChild(projectsCointainer);
 
@@ -225,13 +225,9 @@ flexContainer.appendChild(projectsCointainer);
 
 const addButton = document.querySelectorAll('.seeButton');
 
-addButton.forEach((btn) => {
-  btn.addEventListener('click', createPopUp);
-});
-
 function createPopUp(event) {
   // create popUp div, append it to the main section, add css style class
-  const  projectPopUp = document.createElement('div');
+  const projectPopUp = document.createElement('div');
   document.body.querySelector('main').appendChild(projectPopUp);
   projectPopUp.classList.add('projectPopUp');
 
@@ -254,7 +250,7 @@ function createPopUp(event) {
   projectPopUp.append(
     projectTitleContainer,
     projectUl,
-    projectImgInfoContainer
+    projectImgInfoContainer,
   );
   projectTitleContainer.append(projectTitle, projectCloseContainner);
   projectImgInfoContainer.append(projectImg, projectInfoContainer);
@@ -269,10 +265,10 @@ function createPopUp(event) {
   // add content to the elements
 
   projectTitleContainer.classList.add('projectTitleContiner');
-  projectTitle.textContent = projectData[projectButtonId]['title'];
+  projectTitle.textContent = projectData[projectButtonId].title;
   projectImgInfoContainer.classList.add('projectImgInfoContainer');
   projectInfoContainer.classList.add('projectInfoContainer');
-  projectDescription.textContent = projectData[projectButtonId]['description'];
+  projectDescription.textContent = projectData[projectButtonId].description;
   projectImg.src = projectData[projectButtonId]['featured image'];
   buttonContainner.classList.add('buttonContainner');
   seeLiveButton.href = projectData[projectButtonId]['link to live version'];
@@ -301,8 +297,12 @@ function createPopUp(event) {
   // close icon function
 
   const clickCloseButton = document.getElementById('close-Button');
-  clickCloseButton.addEventListener('click', closeButton);
   function closeButton() {
     projectPopUp.remove();
   }
+  clickCloseButton.addEventListener('click', closeButton);
 }
+
+addButton.forEach((btn) => {
+  btn.addEventListener('click', createPopUp);
+});
