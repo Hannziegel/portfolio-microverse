@@ -669,7 +669,6 @@ footer {
 
 .error {
   border: 1px solid red;
-
 }
 
 .warningMessage {
@@ -679,7 +678,6 @@ footer {
   font-size: 12px;
   text-align: center;
   align-self: center;
-
 }
 
 .warningMessage:empty {
