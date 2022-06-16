@@ -306,3 +306,25 @@ function createPopUp(event) {
 addButton.forEach((btn) => {
   btn.addEventListener('click', createPopUp);
 });
+
+/*    ------=========     Form Validation   =========------    */
+
+// show message 
+function warningMessage(input, message, type) {
+  const messageContent = input.parentNode.parentNode.querySelector('.warningMessage');
+  messageContent.innerText = message;
+  input.parentNode.className = type ? 'sucess' : 'error';
+  return type;
+}
+
+// get contact form from html
+const contactForm = document.forms[0]
+
+// Prevent form to be sent if email has Uppercase chars
+contactForm.addEventListener('submit', (event) => {
+  warningMessage(contactForm.email, '', true);
+  if (contactForm.email.value.match(/[A-Z]/)){
+    warningMessage(contactForm.email, 'Email must be in lowercase, no Uppercase character allowed. Form not sent! Please rewrite your email in lowercase.', false);
+    event.preventDefault();
+  }
+});

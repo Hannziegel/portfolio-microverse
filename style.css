@@ -665,6 +665,22 @@ footer {
   cursor: default;
 }
 
+/* Project Pop Up */
+
+.error {
+  
+}
+
+.warningMessage {
+  
+}
+
+.warningMessage:empty {
+  border: none;
+}
+
+/* Ids */
+
 #square-45 {
   transform: rotate(45deg);
 }
