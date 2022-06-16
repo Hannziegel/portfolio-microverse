@@ -78,6 +78,136 @@ let projectData = [
   }
 ]
 
+/*    ------=========     Portfolio Section    =========------    */
+  let porfolioSection = document.createElement('SECTION');
+  porfolioSection.classList.add('portfolio')
+  porfolioSection.id = 'portfolio'
+  /* document.body.querySelector('main').appendChild(porfolioSection) */
+
+  mainPosition = document.getElementById('main')
+  aboutSectionPosition = document.getElementById('about')
+  mainPosition.insertBefore(porfolioSection, aboutSectionPosition)
+
+  porfolioSection.innerHTML = `
+    <div class="portfolio-title">
+      <h2>My Recent Works</h2>
+      <div class="portfolio-line"></div>
+    </div>
+    <div class="main-project-container">
+      <article id="main-project">
+        <a href="" class="project-img">
+          <img src="./assets/imgs/projects/mainprojectimg.jpg" alt="" />
+        </a>
+        <div class="project-info">
+          <h3>Multi-Post Stories</h3>
+          <p>
+            A daily selection of privately personalized reads; no accounts
+            or sign-ups required. has been the industry's standard dummy
+            text ever since the 1500s, when an unknown printer took a
+            standard dummy text.
+          </p>
+          <ul>
+            <li>CSS</li>
+            <li>HTML</li>
+            <li>bootstrap</li>
+            <li>Ruby</li>
+          </ul>
+
+          <button type="button" class="seeButton" id="0">See Project</button>
+        </div>
+      </article>
+    </div>
+
+    <div class="test">
+      <div class="article-container">
+        <article class="other-projects">
+          <h3>Profesional Art Printing Data</h3>
+          <p>
+            A daily selection of privately personalized reads; no accounts
+            or sign-ups required. has been the industry's standard
+          </p>
+          <ul>
+            <li>HTML</li>
+            <li>bootstrap</li>
+            <li>Ruby</li>
+          </ul>
+          <button type="button" class="seeButton"  id="1">See Project</button>
+        </article>
+
+        <article class="other-projects">
+          <h3>Profesional Art Printing Data</h3>
+          <p>
+            A daily selection of privately personalized reads; no accounts
+            or sign-ups required. has been the industry's standard
+          </p>
+          <ul>
+            <li>HTML</li>
+            <li>bootstrap</li>
+            <li>Ruby</li>
+          </ul>
+          <button type="button" class="seeButton"  id="2">See Project</button>
+        </article>
+
+        <article class="other-projects">
+          <h3>Profesional Art Printing Data</h3>
+          <p>
+            A daily selection of privately personalized reads; no accounts
+            or sign-ups required. has been the industry's standard
+          </p>
+          <ul>
+            <li>HTML</li>
+            <li>bootstrap</li>
+            <li>Ruby</li>
+          </ul>
+          <button type="button" class="seeButton" id="3">See Project</button>
+        </article>
+
+        <article class="other-projects">
+          <h3>Profesional Art Printing Data</h3>
+          <p>
+            A daily selection of privately personalized reads; no accounts
+            or sign-ups required. has been the industry's standard
+          </p>
+          <ul>
+            <li>HTML</li>
+            <li>bootstrap</li>
+            <li>Ruby</li>
+          </ul>
+          <button type="button" class="seeButton" id="4">See Project</button>
+        </article>
+
+        <article class="other-projects">
+          <h3>Profesional Art Printing Data</h3>
+          <p>
+            A daily selection of privately personalized reads; no accounts
+            or sign-ups required. has been the industry's standard
+          </p>
+          <ul>
+            <li>HTML</li>
+            <li>bootstrap</li>
+            <li>Ruby</li>
+          </ul>
+          <button type="button" class="seeButton" id="5">See Project</button>
+        </article>
+
+        <article class="other-projects">
+          <h3>Profesional Art Printing Data</h3>
+          <p>
+            A daily selection of privately personalized reads; no accounts
+            or sign-ups required. has been the industry's standard
+          </p>
+          <ul>
+            <li>HTML</li>
+            <li>bootstrap</li>
+            <li>Ruby</li>
+          </ul>
+          <button type="button" class="seeButton" id="6">See Project</button>
+        </article>
+      </div>
+    </div>
+`
+
+
 /*    ------=========     Pop Up    =========------    */
 
 //click button
@@ -90,7 +220,6 @@ addButton.forEach((btn)=> {
 
 function createPopUp (event){
   //create popUp div, append it to the main section, add css style class
-  console.log(event.target)
   let projectPopUp = document.createElement('div');
   document.body.querySelector('main').appendChild(projectPopUp)
   projectPopUp.classList.add('projectPopUp')
