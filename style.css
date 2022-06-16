@@ -578,6 +578,7 @@ footer {
 .projectPopUp {
   position: fixed;
   height: 90%;
+  max-height: 800px;
   width: 80%;
   top: 5vh;
   left: 10vw;
