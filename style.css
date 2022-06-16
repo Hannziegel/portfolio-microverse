@@ -668,11 +668,18 @@ footer {
 /* Project Pop Up */
 
 .error {
-  
+  border: 1px solid red;
+
 }
 
 .warningMessage {
-  
+  width: 60%;
+  color: red;
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  text-align: center;
+  align-self: center;
+
 }
 
 .warningMessage:empty {
