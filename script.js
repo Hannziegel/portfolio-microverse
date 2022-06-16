@@ -309,7 +309,7 @@ addButton.forEach((btn) => {
 
 /*    ------=========     Form Validation   =========------    */
 
-// show message 
+// show message
 function warningMessage(input, message, type) {
   const messageContent = input.parentNode.parentNode.querySelector('.warningMessage');
   messageContent.innerText = message;
@@ -318,12 +318,12 @@ function warningMessage(input, message, type) {
 }
 
 // get contact form from html
-const contactForm = document.forms[0]
+const contactForm = document.forms[0];
 
 // Prevent form to be sent if email has Uppercase chars
 contactForm.addEventListener('submit', (event) => {
   warningMessage(contactForm.email, '', true);
-  if (contactForm.email.value.match(/[A-Z]/)){
+  if (contactForm.email.value.match(/[A-Z]/)) {
     warningMessage(contactForm.email, 'Email must be in lowercase, no Uppercase character allowed. Form not sent! Please rewrite your email in lowercase.', false);
     event.preventDefault();
   }
