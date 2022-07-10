@@ -1,13 +1,15 @@
-![](https://img.shields.io/badge/Microverse-blueviolet) ![](https://img.shields.io/badge/-HTML-orange) ![](https://img.shields.io/badge/-CSS-blue)
+![](https://img.shields.io/badge/Microverse-blueviolet) ![](https://img.shields.io/badge/-HTML-orange) ![](https://img.shields.io/badge/-CSS-blue) ![](https://img.shields.io/badge/-JavaScript-yellow)
 
-# Portfolio - Mobile version
+# Portfolio
 
-> A mobile version of a portfolio using a template. Project created to better understand HTML, CSS, Linters, Git Flow, Flexbox and Grid concepts
+> A portfolio made using a template. Project created to better understand HTML, CSS, Linters, Git Flow, Flexbox, Grid, DOM and JavaScript concepts.
+> Feel free to see the live version, if you like it please give it a star!
 
 ## Built With
 
 - HTML
 - CSS
+- JavaScript
 
 ## Live Demo 
 
