@@ -60,8 +60,8 @@ const projectData = [
     'A simple To-do app project made using JavaScript ES6 and Webpack - Microverse. Feel free to see the live version, if you like it please give it a star!',
     'featured image': './assets/imgs/projectToDoList.png',
     technologies: ['HTML/CSS', 'DOM', 'JavaScript'],
-    'link to live version': 'https://hannziegel.github.io/portfolio/',
-    'link to source': 'https://github.com/Hannziegel/portfolio',
+    'link to live version': 'https://hannziegel.github.io/to-do-List/',
+    'link to source': 'https://github.com/Hannziegel/to-do-List/dist/',
   },
   {
     title: 'Profesional Art Printing Data More',
