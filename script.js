@@ -2,7 +2,7 @@
 
 function mobileMenu() {
   // Change the height of Header to cover all screen
-  document.querySelector('.collapse').classList.toggle('header-menu');
+  document.querySelector('.header').classList.toggle('header-menu');
   // Add hide class to burguer-icon, logo and remove for .close-icon
   document.querySelector('.logo').classList.toggle('hide');
   document.querySelector('.burguer-icon').classList.toggle('hide');
@@ -28,38 +28,38 @@ document.querySelector('.menu-links').addEventListener('click', () => {
 
 const projectData = [
   {
-    title: 'Multi Post Stories',
+    title: 'Porfolio',
     description:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-    'featured image': './assets/imgs/projects/mainprojectimg.jpg',
-    technologies: ['html', 'Bootstrap', 'Ruby on rails'],
+    'A portfolio made using a template. Project created to better understand HTML, CSS, Linters, Git Flow, Flexbox, Grid, DOM and JavaScript concepts. Feel free to see the live version, if you like it please give it a star!',
+    'featured image': './assets/imgs/projects/projectPortfolio.png',
+    technologies: ['HTML', 'CSS', 'JavaScript'],
     'link to live version': 'https://hannziegel.github.io/portfolio/',
     'link to source': 'https://github.com/Hannziegel/portfolio',
   },
   {
-    title: 'Profesional Art Printing Data More',
+    title: 'Awesome books',
     description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
-    'featured image': './assets/imgs/snapshoot_portfolio_mobile.jpg',
-    technologies: ['html', 'Bootstrap', 'Ruby'],
-    'link to live version': 'https://hannziegel.github.io/portfolio/',
-    'link to source': 'https://github.com/Hannziegel/portfolio',
+    'Basic website that allows users to add/remove books from a list using Javascript ES6. Feel free to see the live version, if you like it please give it a star!',
+    'featured image': './assets/imgs/projectBook.png',
+    technologies: ['HTML', 'JavaScript', 'CSS'],
+    'link to live version': 'https://hannziegel.github.io/books/',
+    'link to source': 'https://github.com/Hannziegel/books',
   },
   {
-    title: 'Data Dashboard Healthcare',
+    title: 'Wolves',
     description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
-    'featured image': './assets/imgs/snapshoot_portfolio_mobile.jpg',
-    technologies: ['html', 'Bootstrap', 'Ruby'],
-    'link to live version': 'https://hannziegel.github.io/portfolio/',
-    'link to source': 'https://github.com/Hannziegel/portfolio',
+      'This is my Capstone project for the 1st module on Microverse. This project used HTML, CSS, and JavaScript and was based on the design made by Cindy Shin. Feel free to see the live version, if you like it please give it a star!',
+    'featured image': './assets/imgs/projectWolves.png',
+    technologies: ['HTML', 'CSS', 'JavaScript'],
+    'link to live version': 'https://hannziegel.github.io/captstoneModule1/',
+    'link to source': 'https://github.com/Hannziegel/captstoneModule1',
   },
   {
-    title: 'Website Protfolio ',
+    title: 'To-do List ',
     description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
-    'featured image': './assets/imgs/snapshoot_portfolio_mobile.jpg',
-    technologies: ['html', 'Bootstrap', 'Ruby'],
+    'A simple To-do app project made using JavaScript ES6 and Webpack - Microverse. Feel free to see the live version, if you like it please give it a star!',
+    'featured image': './assets/imgs/projectToDoList.png',
+    technologies: ['HTML/CSS', 'DOM', 'JavaScript'],
     'link to live version': 'https://hannziegel.github.io/portfolio/',
     'link to source': 'https://github.com/Hannziegel/portfolio',
   },
@@ -106,7 +106,7 @@ mainPosition.insertBefore(porfolioSection, aboutSectionPosition);
 
 // -- Porfolio Title -- //
 
-// Create portfolio-title div and put h2 and div inside
+// Create portfolio-title div and h2
 
 const porfolioTitle = document.createElement('div');
 const portfolioTitleh2 = document.createElement('h2');
