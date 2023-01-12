@@ -1,0 +1,42 @@
+@import "./style.css";
+
+.logo:hover {
+  transform: scale(1.15);
+  transition-duration: 0.5s;
+}
+
+.logo a:hover {
+  color: var(--color-text-2);
+  transition-duration: 0.5s;
+}
+
+.menu-links a:hover {
+  color: var(--color-text-2);
+  transform: scale(1.05);
+  transition-duration: 0.5s;
+}
+
+.headline-intro *:hover {
+  transform: scale(1.05);
+  transition-duration: 0.5s;
+}
+
+.headline-icons a:hover {
+  border-radius: 50%;
+  background-color: var(--color-text-2);
+  transition-duration: 0.5s;
+}
+
+h3:hover,
+p:hover,
+button:hover,
+img:hover,
+li:hover {
+  transform: scale(1.05);
+  transition-duration: 1s;
+}
+
+.menu-links a img:hover {
+  transform: rotate(360deg);
+  transition-duration: 1s;
+}
