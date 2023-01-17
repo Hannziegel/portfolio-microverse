@@ -40,3 +40,16 @@ li:hover {
   transform: rotate(360deg);
   transition-duration: 1s;
 }
+
+.header-menu {
+  animation: reveal 0.5s forwards;
+}
+
+@keyframes reveal {
+  from {
+    clip-path: inset(0 0 0 100%);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
